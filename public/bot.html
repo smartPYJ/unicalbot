@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unical Bot</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|PT+Serif:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+
+                <div class="site-header-inner">
+
+                    <div class="brand header-brand">
+
+
+                        <h1 class="m-0">
+
+
+                            <svg width="32" height="3" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    
+                                    <defs> <h5>powered by</h5>
+                                         <img src="ic.png" height="100" width="110" alt="ICFAD">
+                                       
+                                    </defs>
+                                    <path d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm0-10a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" fill="url(#logo-gradient)" fill-rule="evenodd"/>
+                                </svg>
+
+                        </h1>
+                    </div>
+                    <ul class="header-links list-reset m-0">
+                        <li>
+                            <a href="#">UNICAL</a>
+                        </li>
+                        <li>
+                            <a class="button button-sm button-shadow" href="#">ICFAD</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero text-light text-center">
+                <div class="container-sm">
+                    <div class="hero-inner">
+                        <h1 class="hero-title h2-mobile mt-0 is-revealing">Universiy of Calabar chatbot</h1>
+                        <p class="hero-paragraph is-revealing">Get in Touch with our virtual assistant, get right information from <strong>Wall.e</strong> and avoid misdirection </p>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <script src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"></script>
+            <script>
+                window.loadWatsonAssistantChat({
+                    integrationID: "bfe9f84a-7a9e-4d03-a82c-81e8ad2b537c", // The ID of this integration.
+                    region: "eu-gb" // The region your integration is hosted in.
+                }).then(function(instance) {
+                    instance.render();
+                });
+            </script>
+
+
+
+        </main>
+
+
+
+
+        <div id="contact" class="feature is-revealing div1">
+            <div class="feature-inner">
+
+                <h4 class="feature-title h3-mobile">Contact </h4>
+                <a class="pd" href="tel:+2348162780255"> 08162708255</a>
+                <a class="pd" href="tel:+2348162780255"> 08162708255</a>
+                <a class="pd" href="tel:08162780255"> 08162708255</a>
+                <a href="# " class="pd">info.icfad@gmail.com</a>
+            </div>
+        </div>
+        <script>
+            document.getElementById("contact").style.display = "none";
+        </script>
+
+        <div id="support" visibility: hidden; class="feature is-revealing div1">
+            <div class="feature-inner">
+
+                <h4 class="feature-title h3-mobile">Lorem Ipsum</h4>
+                <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>
+            </div>
+        </div>
+        <script>
+            document.getElementById("support").style.display = "none";
+        </script>
+
+        <div id="about" visibility: hidden; class="feature is-revealing div1">
+            <div class="feature-inner">
+
+                <h4 class="feature-title h3-mobile">About us (ICFAD)</h4>
+                <p class="pw">
+                    <STRONG>I </STRONG>
+                    <STRONG>C</STRONG>REATE
+                    <STRONG>F</STRONG>OR
+                    <STRONG>A </STRONG>
+                    <STRONG>D</STRONG>IFFERENCE
+                </p>
+
+
+                <p class="pw"> A team of developers with the sole aim of leveraging morden technology in solving real world problems and ensuring easy access to the provided solutions.
+                </p>
+            </div>
+        </div>
+        <script>
+            document.getElementById("about").style.display = "none";
+        </script>
+
+
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+                        <a href="#">
+
+                        </a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a onclick="contact()">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106
+                                     1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z" fill="#1dbfd1"/>
+                                    </svg>
+                            </a>
+                            <span><i>Contact</i> </span>
+                        </li>
+                        <li>
+
+                            <a onclick="about()">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M14.601 21.5c0 1.38-1.116 2.5-2.499 2.5-1.378 0-2.499-1.12-2.499-2.5s1.121-2.5 
+                                    2.499-2.5c1.383 0 2.499 1.119 2.499 2.5zm-2.42-21.5c-4.029 0-7.06 2.693-7.06 8h3.955c0-2.304.906-4.189 3.024-4.189 1.247 0 2.57.828 2.684 2.411.123 1.666-.767 2.511-1.892 3.582-2.924
+                                     2.78-2.816 4.049-2.816 7.196h3.943c0-1.452-.157-2.508 1.838-4.659 1.331-1.436 2.986-3.222 3.021-5.943.047-3.963-2.751-6.398-6.697-6.398z" fill="#1dbfd1"/></svg>
+                            </a>
+                            <span><i>About</i> </span>
+                        </li>
+
+                        <li>
+                            <a onclick="support()">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm8.975 7.617l-2.607 1.485c-.697-1.53-1.928-2.762-3.455-3.462l1.484-2.608c1.988.979 3.601 2.595 4.578 4.585zm-8.975 9.383c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5zm-4.397-13.968l1.485 2.608c-1.527.701-2.757 
+                                    1.933-3.455 3.463l-2.608-1.486c.976-1.99 2.59-3.606 4.578-4.585zm-4.578 13.351l2.608-1.485c.697 1.53 1.927 2.762 3.455 3.462l-1.485 2.608c-1.988-.979-3.602-2.595-4.578-4.585zm13.371 4.585l-1.484-2.608c1.527-.701 2.758-1.933 3.455-3.462l2.607 1.485c-.976 1.99-2.589 3.606-4.578 4.585z" fill="#1dbfd1"/></svg>
+                            </a>
+                            <span> <i> Support</i></span>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="#">
+
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#d916c5"/>
+                                </svg>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#d916c5"/>
+                                </svg>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M11.984 16.815c2.596 0 4.706-2.111 4.706-4.707 0-1.409-.623-2.674-1.606-3.538-.346-.303-.735-.556-1.158-.748-.593-.27-1.249-.421-1.941-.421s-1.349.151-1.941.421c-.424.194-.814.447-1.158.749-.985.864-1.608 2.129-1.608 3.538 0 2.595 2.112 4.706 4.706 4.706zm.016-8.184c1.921 0 3.479 1.557 3.479 3.478 0 1.921-1.558 3.479-3.479 3.479s-3.479-1.557-3.479-3.479c0-1.921 1.558-3.478 3.479-3.478zm5.223.369h6.777v10.278c0 2.608-2.114 4.722-4.722 4.722h-14.493c-2.608 0-4.785-2.114-4.785-4.722v-10.278h6.747c-.544.913-.872 1.969-.872 3.109 0 3.374 2.735 6.109 6.109 6.109s6.109-2.735 6.109-6.109c.001-1.14-.327-2.196-.87-3.109zm2.055-9h-12.278v5h-1v-5h-1v5h-1v-4.923c-.346.057-.682.143-1 .27v4.653h-1v-4.102c-1.202.857-2 2.246-2 3.824v3.278h7.473c1.167-1.282 2.798-2 4.511-2 1.722 0 3.351.725 4.511 2h7.505v-3.278c0-2.608-2.114-4.722-4.722-4.722zm2.722 5.265c0 
+                                    .406-.333.735-.745.735h-2.511c-.411 0-.744-.329-.744-.735v-2.53c0-.406.333-.735.744-.735h2.511c.412 0 .745.329.745.735v2.53z" fill="#d916c5"/>
+                                </svg>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                    <div class="footer-copyright">
+                        <h6> &copy; 2020 ICFAD, all rights reserved</h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+    <script src="dist/js/display.js"></script>
+
+
+</body>
+
+</html>
